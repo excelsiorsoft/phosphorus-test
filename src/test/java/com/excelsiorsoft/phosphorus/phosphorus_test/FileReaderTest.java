@@ -20,9 +20,9 @@ public class FileReaderTest extends TestCase {
 		//Map<String, String> sequences = cut.injest("small-file-3.txt");
 		//Assert.assertTrue("wrong size: expect 1650 sequences", sequences.size() == 1650);
 		
-		//long start = System.currentTimeMillis();
+		long start = System.currentTimeMillis();
 		
-		for(Map.Entry<String, String> entry1: sequences.entrySet()) {
+		/*for(Map.Entry<String, String> entry1: sequences.entrySet()) {
 			String key1 = entry1.getKey();
 			   int hash1 = System.identityHashCode(key1);
 			   String value1 = entry1.getValue();
@@ -35,9 +35,9 @@ public class FileReaderTest extends TestCase {
 			       System.out.println(key1+":"+key2);
 			      
 			   }
-			}
+			}*/
 		
-		/*List<String> seqs = new ArrayList<String>(sequences.values());
+		List<String> seqs = new ArrayList<String>(sequences.values());
 		long counter = 0;
 		for (int i = 0; i < seqs.size(); i++) {
 			  for (int j = i+1; j<seqs.size(); j++) {
@@ -49,7 +49,7 @@ public class FileReaderTest extends TestCase {
 			}
 		
 		long end = System.currentTimeMillis();
-		System.out.println("elapsed mins: " + (end - start)/(60*1000F));*/
+		System.out.println("elapsed mins: " + (end - start)/(60*1000F));
 	}
 	
 	
