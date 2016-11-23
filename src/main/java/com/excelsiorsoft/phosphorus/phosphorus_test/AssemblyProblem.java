@@ -6,6 +6,12 @@ import java.util.List;
 import java.util.Map;
 
 
+/**
+ * Encapsulates main logic of the Assembly Problem excercise
+ * 
+ * @author Simeon
+ *
+ */
 public class AssemblyProblem {
 	
 	private  List<List<String>> outcasts = new ArrayList<>(); 
@@ -19,6 +25,14 @@ public class AssemblyProblem {
 		return outcasts;
 	}
 
+	/**
+	 * Encapsulates finding the longest overlap between two strings logic for Part A of the excercise
+	 * 
+	 * @param first string to compare
+	 * @param second string to compare
+	 * @param verbose if `yes`, returs a full breakdown of found longest overlap
+	 * @return
+	 */
 	public /*static*/ int longestSubstr(String first, String second, boolean verbose) {     
 	    int maxLen = 0;
 	    int fl = first.length();
@@ -54,6 +68,13 @@ public class AssemblyProblem {
 	    return maxLen;
 	}
 	
+	/**
+	 * Encapsulates finding combinations logic for Part B of the excercise
+	 * 
+	 * @param soughtOverlap
+	 * @param sequences
+	 * @throws IOException
+	 */
 	public   void combinations(int soughtOverlap, Map<String, String> sequences) throws IOException{
 		
 

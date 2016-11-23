@@ -8,11 +8,22 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+/**
+ * Encapsulates the logic of txt file ingestion
+ * 
+ * @author Simeon
+ *
+ */
 public class FileReader {
 	
 	private static final String SEQ_STARTER = ">";
 	private static final String LINE_SEPARATOR = "\n";
 
+	/**
+	 * @param fileName
+	 * @return sequences as a {@link java.util.Map} keyed by sequenceId
+	 * @throws IOException
+	 */
 	public Map<String, String> injest(String fileName) throws IOException{
 		
 		/*ClassLoader classLoader = getClass().getClassLoader();
